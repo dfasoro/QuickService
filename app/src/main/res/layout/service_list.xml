@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent" android:layout_height="fill_parent"
+ android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/filterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:windowSoftInputMode="stateHidden"
+        android:hint="Filter Services" />
+
+    <TextView
+        android:id="@+id/favoriteInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="To add/remove favorites, long-press on a Service in the previous screen"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="5dp"/>
+
+ <ListView android:id="@+id/serviceView" 
+    android:layout_width="fill_parent"
+    android:layout_height="0dp" android:layout_weight="1" />
+ 
+ 
+    <TextView
+        android:id="@+id/empty_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Matching Services" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_previous"
+        android:title="Previous"/>
+    <item android:id="@+id/action_go" android:title="Go"></item>
+    <item android:id="@+id/action_next" android:title="Next"></item>
+    <item android:id="@+id/action_edit" android:title="Edit"></item>
+    <item android:id="@+id/action_reload" android:title="Reload Last"></item>
+
+</menu>
